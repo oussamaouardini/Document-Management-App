@@ -1,0 +1,62 @@
+<ngx-spinner></ngx-spinner>
+
+
+
+
+<div class="limiter">
+    <div class=" failed "  *ngIf='fail'  > 
+        <div class="showmsgerr">
+        {{message}} 
+      </div>
+      </div>
+  <div class="container-table100">
+      <div class="wrap-table100">
+              <div class="table">
+
+                  <div class="row header">
+                      <div class="cell" style="width: 450px;"  >
+                        Document Description
+                      </div>
+                      <div class="cell"  style="width: 200px;" >
+                        Documents Name
+                      </div>
+                      <div class="cell" style="width: 200px;"  >
+                        Published By
+                      </div>
+                      <div class="cell">
+                        Published
+                      </div>
+                      <div class="cell" style="width: 150px;"  >
+                        Action
+                      </div>
+                  </div>
+
+                  <div class="row roww " *ngFor=" let post of all"   >
+                      <div class="cell" data-title="Full Name">
+                        {{ post.data.description }}
+                      </div>
+                      <div class="cell" data-title="Age">
+                        {{post.data.FileName}}
+                      </div>
+                      <div class="cell" data-title="Job Title">
+                        {{post.data.authorName}}
+                      </div>
+                      <div class="cell" data-title="Location">
+                        {{post.data.Creationdate}}
+                      </div>
+                      <div class="cell" data-title="Location">
+
+                          <img src="https://img.icons8.com/material-sharp/24/000000/download.png"  style="padding-right: 10px;" 
+                          (click)="gettdoc(post.data.FileName,post.data.idfile,post.data.authorName)" >
+                          <img src="https://img.icons8.com/metro/26/000000/view-file.png"    (click)="view(post.data.FileName,post.data.idfile,post.data.authorName)" >
+                        <!--    
+                        <img src="https://img.icons8.com/metro/26/000000/download.png"  id="scr" width="40px" height="40px" (click)="gettdoc(post.data.FileName,post.data.idfile,post.data.authorName)"
+                        > 
+                          <img src="https://img.icons8.com/ios/50/000000/view-file.png" width="40px" height="40px"id="scr"  (click)="view(post.data.FileName,post.data.idfile,post.data.authorName)" >  -->
+
+                    </div>
+                  </div>
+              </div>
+      </div>
+  </div>
+</div>

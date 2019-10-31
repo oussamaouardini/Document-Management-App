@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="image-container">
+            <app-myposts  *ngFor="let post of following "  
+            [FileName]="post.data.FileName"  [displaypostedby]="false"
+            [Creationdate]="post.data.Creationdate"
+            [idfile]="post.data.idfile"
+            [description]="post.data.description"
+            [userid]="post.data.uid" 
+            [valuestatu]="post.data.valuestatu" 
+            [authorName]="post.data.authorName" 
+            [email]="post.data.email" 
+            [AllowUsers]="post.data.AllowUsers" 
+            [filestatu]="post.data.filestatu"
+            (favoritesclicked)="onfavoritesclicked($event)"
+            >
+            </app-myposts>
+        </div>
+      </div>
+    </div>
+</div>

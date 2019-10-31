@@ -1,0 +1,597 @@
+.full-frame{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border: 1px solid #dcd5d3;
+    border-radius: 5px;
+    width: 150px;
+  }
+  
+  img{
+    padding: 2px;
+    height: 150px;
+    width: 150px;
+  
+  }
+  
+  .text-section {
+    border-top: 1px solid #dcd5d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .text-section-row {
+    min-height: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 10px;
+  }
+  .text-section-row span {
+    padding: 5px;
+  }
+  
+  .row0 {
+    background-color: black;
+    color: white;
+  }
+  
+  .row1{
+   background-color: aliceblue;
+  }
+  
+  .row2{
+    background-color: aquamarine;
+  }
+  
+  .row3{
+    background-color: bisque;
+  }
+  
+  .row5{
+    background-color: darkkhaki;
+  }
+  
+  .action-row {
+    cursor: pointer;
+  }
+
+
+  #canvas_container {
+    width: 800px;
+    height: 450px;
+    overflow: auto;
+}
+
+
+.description{
+
+  height: 80px;
+  color: black;
+  font-size: 18px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card{
+  margin-bottom: 10px;
+ 
+  border-radius: 16px;
+  }
+  .cont{
+    display: block;
+    margin: auto auto ;
+	//margin-top: 50px;
+  }
+  .col-lg-3:first-child .card{
+	border: 1px solid #007bff;
+  }
+  .col-lg-3:nth-child(2) .card{
+	border: 1px solid #dc3545;
+  }
+  .col-lg-3:nth-child(3) .card{
+	border: 1px solid #28a745;
+  }
+  .col-lg-3:last-child .card{
+	border: 1px solid #6c757d;
+  }
+  .desc{
+	font-family: 'Teko', sans-serif;
+	font-size: 30px;
+  }
+  .desc2{
+	font-size: 15px;
+	height: 130px;
+  }
+  .btn{
+	width: 100%;
+  }
+  .democlass{
+    height: 30px;
+    color: red;
+  }
+
+
+  .democlass1{
+    height: 30px;
+    color: green;
+  }
+  .democlass2{
+    height: 30px;
+    color: rgb(0, 68, 255);
+  }
+  .democlass3{
+    height: 30px;
+    color: gray;
+  }
+  
+
+  .blueclass .clipBlue{
+
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    clip-path: circle(10% at 0% 0%);
+    transition: clip-path .7s ease-in-out;
+    cursor: pointer;
+  }
+
+
+  .blueclass button{
+    background-color: #007bff;
+    color: floralwhite;
+    width: 100%;
+    height: 37px;
+    border: 1px solid #007bff;
+    border-radius:5px ;
+    
+  
+  }
+  .blueclass:first-child :hover{
+    box-shadow: 0px 10px 30px -12px #3a58f9;
+  }
+  .blueclass h5{
+    color: #007bff;
+    //font-weight: bold;
+    font-size: 30px;
+  }
+  .blueclass span{
+    color: #007bff;
+  }
+  .blueclass p {
+    height: 100px;
+    color: #000;
+  }
+  .blueclass:first-child .card{
+    border: 1px solid #007bff;
+    }
+  
+
+    .greenclass span{
+      color: #28a745;
+    }
+
+    .greenclass button{
+      background-color:  #28a745;;
+      color: floralwhite;
+      width: 100%;
+      height: 37px;
+      border: 1px solid  #28a745;;
+      border-radius:5px ;
+    
+    
+    }
+
+    .greenclass .clipBlue{
+
+      background-color: #28a745;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 15px;
+      clip-path: circle(10% at 0% 0%);
+      transition: clip-path .7s ease-in-out;
+      cursor: pointer;
+    }
+    .greenclass:first-child :hover{
+      box-shadow: 0px 10px 30px -12px #28a745;
+    }
+
+    .greenclass h5{
+      color:  #28a745;;
+      //font-weight: bold;
+      font-size: 30px;
+    }
+    .greenclass p {
+      height: 100px;
+      color: #000;
+    }
+    .greenclass:first-child .card{
+      border: 1px solid  #28a745;;
+      }
+    
+      .redclass span{
+        color: #dc3545;
+      }
+      .redclass button{
+        background-color:  #dc3545;;
+        color: floralwhite;
+        width: 100%;
+        height: 37px;
+        border: 1px solid  #dc3545;;
+        border-radius:5px ;
+      
+      
+      }
+
+      .redclass .clipBlue{
+
+        background-color: #dc3545;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 15px;
+        clip-path: circle(10% at 0% 0%);
+        transition: clip-path .7s ease-in-out;
+        cursor: pointer;
+      }
+      .redclass:first-child :hover{
+        box-shadow: 0px 10px 30px -12px #dc3545;
+      }
+      .redclass h5{
+        color:  #dc3545;;
+        //font-weight: bold;
+        font-size: 30px;
+      }
+      .redclass p {
+        height: 100px;
+        color: #000;
+      }
+      .redclass:first-child .card{
+        border: 1px solid  #dc3545;;
+        }
+
+        
+
+        .grayclass button{
+          background-color:  #6c757d;
+          color: floralwhite;
+          width: 100%;
+          height: 37px;
+          border: 1px solid  #6c757d;
+          border-radius:5px ;
+        
+        
+        }
+
+        .grayclass .clipBlue{
+
+          background-color: #6c757d;
+          color: #fff;
+          padding: 5px 10px;
+          border-radius: 15px;
+          clip-path: circle(10% at 0% 0%);
+          transition: clip-path .7s ease-in-out;
+          cursor: pointer;
+        }
+        .grayclass:first-child :hover{
+          box-shadow: 0px 10px 30px -12px #6c757d;
+        }
+        .grayclass h5{
+          color: #6c757d;
+          //font-weight: bold;
+          font-size: 30px;
+        }
+
+        .grayclass span{
+          color: #000;
+        }
+
+        .grayclass p {
+          height: 100px;
+          color: #000;
+        }
+        .grayclass:first-child .card{
+          border: 1px solid  #6c757d;
+          }
+          .toul{
+width: 1000px;
+          }
+
+          .fas{
+
+            float: right;
+            top: 0;
+            right: 0;
+            margin-top: 0%;
+            padding-right: 0%;
+            margin-right: 0%;
+            padding-top: 0%;
+
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+          .fa{
+            margin-left: -25px;
+            cursor: pointer;
+            color: #000;
+          
+          
+          }
+
+
+          #login-boxx{
+            color: #000;
+           // position: relative;
+            margin: 10px 2px ;
+            padding: 10px 15px ; 
+            height:100%;
+            width: 1000px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        }          
+
+
+
+
+        
+        .whiteContainer{
+          width: 100%;
+          margin: auto;
+          border-radius: 15px;
+          background-color: #ccc;
+          color: #fff;
+        }
+  
+        .whiteContainer:hover .clipBlue{
+          clip-path: circle(200%);
+        }
+  
+        .clipBlue{
+          background-color: #007bff;
+          color: #fff;
+          padding: 5px 10px;
+          border-radius: 15px;
+          clip-path: circle(20% at 0% 0%);
+          transition: clip-path .7s ease-in-out;
+          cursor: pointer;
+        }
+    
+        .span{
+      float: left;
+      margin-right: 24px;
+      margin-top: 12px;
+      font-size: 27px;
+      font-weight: bold;
+      //height: 200px;
+      }
+
+      p{
+
+
+        font-size: 15px;
+        line-height: 15px;
+      }
+  
+
+
+      .hh_up{
+
+        text-align: center;
+      }
+
+
+
+
+
+
+
+
+
+
+
+      
+@import "http://fonts.googleapis.com/css?family=Raleway";
+/*----------------------------------------------
+CSS settings for HTML div Exact Center
+------------------------------------------------*/
+#abc {
+width:100%;
+height:100%;
+opacity:.99;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+
+
+#delet {
+    width:100%;
+    height:100%;
+    opacity:.99;
+    top:0;
+    left:0;
+    display:none;
+    position:fixed;
+    background-color:#313131;
+    overflow:auto
+    }
+
+
+
+i#close {
+position:absolute;
+right:-14px;
+top:-14px;
+cursor:pointer
+}
+div#popupContact {
+position:absolute;
+left:50%;
+top:17%;
+margin-left:-400px;
+font-family:'Raleway',sans-serif
+}
+
+
+div#popupContacte {
+    position:absolute;
+    left:50%;
+    top:17%;
+    margin-left:-202px;
+    font-family:'Raleway',sans-serif
+    }
+
+.cond{
+
+    cursor: pointer;
+}
+    .deletpop {
+        max-width:400px;
+        min-width:250px;
+        padding:10px 50px;
+        border:2px solid gray;
+        border-radius:10px;
+        font-family:raleway;
+        background-color:#47494d
+        }
+
+        .yes {
+            margin-left: 20px;
+           margin-right: 20px;
+        }
+
+
+.bbtnsur{
+
+    margin-top: 20px;
+}
+
+
+form {
+max-width:700px;
+min-width:350px;
+padding:10px 50px;
+border:2px solid gray;
+border-radius:10px;
+font-family:raleway;
+background-color:#fff;
+
+}
+
+i{
+
+    cursor:pointer;
+}
+
+
+
+p {
+margin-top:30px
+}
+h2 {
+background-color:#FEFFED;
+padding:20px 35px;
+margin:-10px -50px;
+text-align:center;
+border-radius:10px 10px 0 0
+}
+hr {
+margin:10px -50px;
+border:0;
+border-top:1px solid #ccc
+}
+input[type=text],input[type=email] ,input[type=password]  {
+width:82%;
+padding:10px;
+margin-top:30px;
+border:1px solid #ccc;
+padding-left:20px;
+font-size:16px;
+font-family:raleway
+}
+#name {
+//background-image:url(../images/name.jpg);
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+#email {
+//background-image:url(../images/email.png);
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+textarea {
+//background-image:url(../images/msg.png);
+background-repeat:no-repeat;
+background-position:5px 7px;
+width:82%;
+height:95px;
+padding:10px;
+resize:none;
+margin-top:30px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:raleway;
+margin-bottom:30px
+}
+#submit {
+text-decoration:none;
+width:100%;
+text-align:center;
+display:block;
+background-color:#FFBC00;
+color:#fff;
+border:1px solid #FFCB00;
+margin-top:30px;
+padding:10px 0;
+font-size:20px;
+cursor:pointer;
+border-radius:5px
+}
+span {
+color:red;
+font-weight:700
+}
+button {
+width:10%;
+height:45px;
+border-radius:3px;
+background-color:#cd853f;
+color:#fff;
+font-family:'Raleway',sans-serif;
+font-size:18px;
+cursor:pointer
+}

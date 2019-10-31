@@ -1,0 +1,16 @@
+
+<div class="container">
+        <div class="row">
+          <div class="col-lg-8 lfer9">
+              <div class="sty">
+                    <form   (ngSubmit)="onSubmit(f)" #f="ngForm" >
+                      <div *ngFor="let naame of usersnames" class="form-group" >
+                            <input type="checkbox"  value={{naame.data.name}}   [checked]="naame.checked"   (click)="selectionChange($event.srcElement)"   class="checks" ><label>{{naame.data.name}}</label>
+                            <label>{{checkeduser}}</label>
+                      </div>
+                        <button type="submit" class="btn btn-primary"  >Submit</button>
+                    </form>
+          </div>
+        </div>
+       </div>
+      </div>

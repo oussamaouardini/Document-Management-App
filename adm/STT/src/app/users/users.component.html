@@ -1,0 +1,200 @@
+<ngx-spinner></ngx-spinner>
+
+
+    <!--   ljadid -->
+
+    <div  id="body" style="overflow:hidden;"  >
+
+   
+      <div id="abc">
+      
+      <div id="popupContact">
+    
+      <form (ngSubmit)="onSubmit(f)"  id="form" method="post" name="form"  >
+        <i class="fas fa fa-times" id="close" (click)='div_hide()' ></i>
+      <h2>Update User Data</h2>
+      <hr>
+      <input id="name" name="name" placeholder="User Name"    type="text">
+      <input id="email" name="email" placeholder="Email" type="email">
+      <input id="password" name="password" placeholder="New Password" type="password" >
+      <input type="submit" (click)='nbedlou()'  name='signup-button' id="submit" style="font-size: 16px;" class="btn btn-warning"  value='Confirm  Modification'  >
+      </form>
+      </div>
+      
+      </div>
+    
+      </div>
+
+
+      
+<div  id="body" style="overflow:hidden;"  >
+
+   
+  <div id="delet">
+  
+  <div id="popupContacte">
+  
+  <i class="fas fa fa-times" id="close" (click)='delet_hide()' ></i>
+  <div class="deletpop">
+
+    Are you sure you want to delete?
+
+    <div class="bbtnsur">
+
+    
+
+    <input type="radio"  value="cancel" name="statu" id='cancel'class="cond" (click)='statuu($event.srcElement)' style="display: none;"><label for='cancel' class="cond"><div  style="background-color: #969696;width: 80px;height: 40px;
+      border-radius: 6px;
+      border : 2px  solid #8f8f8f; text-align: center;margin: 15px;padding-top: 2px;
+      ">Cancel</div></label>
+    
+
+
+    <input type="radio"  value="yes" name="statu" id='yes'  class="cond" (click)='statuu($event.srcElement)' style="display: none;"><label for='yes' class="cond" ><div  style="background-color: #28a745;width: 80px;height: 40px;
+      border-radius: 6px;
+      border : 2px  solid #28a745; text-align: center;margin: 15px;padding-top: 4px;
+      ">YES</div></label>
+</div>
+  </div>
+    
+  </div>
+
+  </div>
+ 
+</div>
+
+          
+
+    <div class="von">
+
+      <nav>
+          <ul>
+        
+           
+
+
+                <li  routerLink="/lstusers">
+                  <div class="home-icon">
+                    <img src="https://img.icons8.com/ultraviolet/40/000000/user.png">
+                  </div>
+                </li>
+                
+                <li  routerLink="/addusers"   >
+                  <div class="work-icon" >
+                    <img src="https://img.icons8.com/ultraviolet/40/000000/add-user-group-man-man.png">
+                  </div>
+                </li>
+             
+            
+                <li   routerLink="/allposts"  >
+                  <div class="work-icon" >
+                      <img src="https://img.icons8.com/color/48/000000/product-documents.png">
+                  </div>
+                </li>
+
+                <li  (click)="onlogout()" >
+                  <div class="work-icon"    >
+
+
+
+                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                      width="48" height="48"
+                      viewBox="0 0 172 172"
+                      style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M25.08333,143.33333v-114.66667c0,-7.88333 6.45,-14.33333 14.33333,-14.33333h86c7.88333,0 14.33333,6.45 14.33333,14.33333v114.66667c0,7.88333 -6.45,14.33333 -14.33333,14.33333h-86c-7.88333,0 -14.33333,-6.45 -14.33333,-14.33333z" fill="#cccccc"></path><path d="M153.00833,86l-38.34167,32.25v-64.5z" fill="#3498db"></path><path d="M50.16667,75.25h82.41667v21.5h-82.41667z" fill="#3498db"></path></g></g></svg>
+
+
+
+
+
+                    
+                  </div>
+                </li>
+                
+        
+        
+        
+           
+          </ul>
+        </nav>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  
+      
+      <div class="limiter">
+          <div class="container-table100">
+              <div class="wrap-table100">
+                      <div class="table">
+      
+      
+                  
+      
+      
+        
+                          <div class="row header">
+                              <div class="cell" style="width: 100px;"   >
+                                User ID
+                              </div>
+                              <div class="cell"  style="width: 230px;"  >
+                                User Identifier
+                              </div>
+                              
+                              <div class="cell"   >
+                                User Name
+                              </div>
+                              <div class="cell"  >
+                                Password
+                              </div>
+                              <div class="cell"  style="width: 100px;" >
+                                Action
+                              </div>
+                          </div>
+
+
+
+
+        
+                          <div class="row roww " *ngFor="let naame of usersnames"  >
+                              <div class="cell" data-title="Full Name"   >
+                                {{naame.data.uid}}
+                              </div>
+                              <div class="cell" data-title="Age">
+                                {{naame.data.email}}
+                              </div>
+                              
+                              <div class="cell" data-title="Location">
+                                {{naame.data.name}}
+                              </div>
+
+                              <div class="cell" data-title="Location" id={{naame.data.uid}} name=" pass" (dblclick)="chowpsd(naame.data.uid,naame.data.password)" >
+
+                              <span  > ********** </span>  
+                              </div>
+
+
+
+                              <div class="cell" data-title="Location">
+      
+      
+                                <i class="fa fa-pencil bbv" (click)="div_show(naame.data.uid,naame.data.email,naame.data.name,naame.data.password)"  style="margin-right: 10px;" ></i>
+           
+                                <i class="fa fa-trash bbv" (click)='delet_show(naame.data.uid)'  style="margin-right: 10px;" ></i>
+      
+                              
+                              
+                            </div>
+                          </div>
+                      </div>
+              </div>
+          </div>
+        </div>
+        

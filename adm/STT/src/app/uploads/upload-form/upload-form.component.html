@@ -1,0 +1,228 @@
+
+<!--
+<div class="container">
+<div class="row">-->
+<!-- PROGRESS OF DOWNLODING THE FILE -->
+<!--
+<div *ngIf="currentUpload">
+    <div class="progress">
+      <div class="progress-bar progress-bar-animated" [ngStyle]="{ 'width': currentUpload?.progress + '%' }"></div>
+    </div>
+    Progress: {{currentUpload?.name}} | {{currentUpload?.progress}}% Complete
+</div>-->
+<!--  Upload Part  -->
+<!--
+<label class="card card-outline-primary">
+  
+          <div class="card-block">
+            <label >
+                <input type="file" (change)="detectFiles($event)"   >
+              
+            </label>
+            <button class="btn btn-primary"
+                    [disabled]="!selectedFiles"
+                    (click)="handle()">
+        
+              Upload Single
+            </button>
+            <label>
+                    <input type="file" (change)="detectFiles($event)" multiple>
+            </label>
+
+          <button class="btn btn-primary"
+                [disabled]="!selectedFiles"
+                (click)="handle()">
+           Upload Multiple
+          </button>
+          </div>
+          
+          <div *ngIf="expression">
+            <h1>select users who can see that file</h1>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 lfer9">
+                  <div class="sty">
+                          <form  #f="ngForm" >
+                            <div *ngFor="let naame of usersnames" class="form-group" >
+                                  <input type="checkbox"  value={{naame.data.name}}   [checked]="naame.checked"   
+                                  (click)="selectionChange($event.srcElement)"   class="checks" ><label>{{naame.data.name}}</label>
+                            </div>
+                          </form>
+                          <button (click)='uploadSingle()'>upload</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+</label>
+
+
+</div>-->
+<!--  DISPLAY POSTS  -->
+<!--
+<div class="row">
+   <div class="col-lg-12">
+     <div class="image-container">
+
+        <app-post *ngFor="let post of postLists"  
+        [FileName]="post.data.FileName"  [displaypostedby]="false"
+        [Creationdate]="post.data.Creationdate"
+        [idfile]="post.data.idfile"
+        [description]="post.data.description"
+        [userid]="post.data.uid"
+        [authorName]="post.data.authorName"
+        >
+          </app-post>
+     </div>
+   </div>
+</div>
+
+</div>
+
+
+-->
+
+
+
+
+          <!--
+
+
+<div class="container">
+    <div class="row">
+      
+    <div *ngIf="currentUpload">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 200px;" [ngStyle]="{ 'width': currentUpload?.progress + '%' }" ></div>
+      
+        </div>
+        Progress: {{currentUpload?.name}} | {{currentUpload?.progress}}% Complete
+    </div>
+  
+    
+  </div>
+    
+      
+
+        <div class="oneupload ">
+          
+           <label class="inpt ">
+
+            <input type="file" value="add a file"  class="btn btn-outline-info" (change)="detectFiles($event)" (click)='bbttn()' ><span class="txt-btn">ADD File <i class="btnpp fa fa-plus-circle"></i></span>
+ 
+            
+           </label>
+           
+              
+              <div *ngIf="bbtn" class="compbtn" > 
+                  <button type="button" class="compbtn btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" [disabled]="!selectedFiles"
+                  (click)="handle()" >
+                      Complet Uploading
+                    </button>
+
+              </div>
+        </div>
+
+
+        
+        <div *ngIf="status" class="row">
+          <br>
+          
+            <h1>Who should see this? </h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 lfer9">
+                        <div class="sty">
+                            <form  #f="ngForm" >
+            <input type="radio"  value="public" name="statu" (click)='statuu($event.srcElement)' ><label>public</label>
+            <br>
+            <input type="radio"  value="private" name="statu" (click)='statuu($event.srcElement)' ><label>private</label>
+            
+            </form>
+                    </div>
+          </div>
+                 </div>   
+          </div>
+        </div>
+        
+              
+              <div *ngIf="expression">
+                <h1>select users who can have access to your file</h1>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 lfer9">
+                      <div class="sty">
+                              <form  #f="ngForm" >
+                                <div *ngFor="let naame of usersnames" class="form-group" >
+                                      <input type="checkbox"  value={{naame.data.name}}   [checked]="naame.checked"   
+                                      (click)="selectionChange($event.srcElement)"   class="checks" ><label>{{naame.data.name}}</label>
+                                </div>
+                              </form>
+                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="status" class="upp">
+                  <button type="button"(click)='uploadSingle()' class="btn btn-success"  [disabled]="!selectedstatu" >Upload</button>
+               
+              </div>
+    
+    
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+         
+         <div class="image-container">
+    
+            <app-post *ngFor="let post of postLists"  
+            [FileName]="post.data.FileName"  [displaypostedby]="false"
+            [Creationdate]="post.data.Creationdate"
+            [idfile]="post.data.idfile"
+            [description]="post.data.description"
+            [userid]="post.data.uid"
+            [authorName]="post.data.authorName"
+            >
+              </app-post>
+         </div>
+      
+    
+
+     
+
+    
+    </div>
+
+
+    
+-->
+  
+    
+
+         
+ 
+
+
+<div class="image-container">
+    
+  <app-post *ngFor="let post of postLists"  
+  [FileName]="post.data.FileName"  [displaypostedby]="false"
+  [Creationdate]="post.data.Creationdate"
+  [idfile]="post.data.idfile"
+  [description]="post.data.description"
+  [userid]="post.data.uid"
+  [authorName]="post.data.authorName"
+  >
+    </app-post>
+</div>

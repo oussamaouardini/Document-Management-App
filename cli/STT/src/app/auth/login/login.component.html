@@ -1,0 +1,127 @@
+
+<div *ngIf='notifi' >
+
+
+<app-notification></app-notification>
+</div>
+<div class=" failed "  *ngIf='fail'  > 
+  <div class="showmsgerr">
+  {{message}} 
+</div>
+</div>
+<!--
+<div class="container">
+
+
+    <div class="row sign-up">
+        <p>Log In</p>
+      
+    </div>
+    
+    <div class="row already-acc">
+          
+        <p>Need an account? <a [routerLink]="[ '/signup' ]">Sign Up</a> </p>
+    
+    </div>
+
+<div id="login-boxx">
+  <div class="row">
+
+    <h3 class="ssat">Info<span class="satt">Sat</span></h3>
+   
+  </div>
+
+<div class="row loog">
+<p>
+    <button class="social facebook" (click)='FacebooksignInViaPopup()'>  Log In With Facebook</button>
+    
+<button class="social google"  (click)='googlesignInViaPopup()'>  Log In With Google</button>
+
+<button *ngIf="emaidxl" class="social email"  (click)='email()'>  Email</button>
+</p>
+</div>
+<div  *ngIf="!emaidxl" class="foor">
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                  
+    <div class="form-group">
+           <span>Adresse e-mail</span>
+           <input type="email" name="email" id="email" ngModel class="form-control"   required>
+    </div>
+            
+    <div class="form-group">
+            <span>Password</span>
+            <div class="row">
+              <input type="password" class="txt" name="password" id="password" ngModel class="form-control"  required >
+            <i class="fa fa-eye ay" (click)="seepass()"></i>
+            </div>
+    </div>        
+            <input type="submit"  name='signup-button'  [disabled]='!f.form.valid' value='Log IN'>
+  </form>
+</div>
+  </div>
+</div>
+-->
+
+<div class="bod_log">
+
+
+  <div class="limiter" >
+    <div class="container-login100"   >
+      <div class="wrap-login100 p-l-50 p-r-50 p-t-77 p-b-30" style="height: 600px;" >
+        <form class="login100-form validate-form"  (ngSubmit)="onSubmit(f)" #f="ngForm"  >
+          <span class="login100-form-title p-b-55">
+            Login
+          </span>
+      <div class="form-group  wrap-input100 validate-input m-b-16  ">
+            
+            <input type="email" name="email" id="email" ngModel class="form-control" class="input100"  placeholder="Email"  required>
+            <span class="focus-input100"></span>
+     </div>
+             
+     <div class="form-group  wrap-input100 validate-input m-b-16  ">
+             
+            
+               <input type="password" class="txt" name="password" id="password" ngModel class="form-control" class="input100"  placeholder="Password" required >
+               <span class="focus-input100"></span>
+            
+     </div>  
+
+
+          <div class="container-login100-form-btn p-t-25">
+  
+              <input type="submit"  name='signup-button'class="login100-form-btn" [disabled]='!f.form.valid' value=' Login'>
+  
+          </div>
+  
+          <div class="text-center w-full p-t-42 p-b-22">
+            <span class="txt1">
+              Or login with
+            </span>
+          </div>
+  
+          <a   (click)="FacebooksignInViaPopup()"   class="btn-face m-b-10">
+            <i class="fa fa-facebook-official"></i>
+            Facebook
+          </a>
+  
+          <a  (click)="googlesignInViaPopup()"   class="btn-google m-b-10">
+            <img src="https://img.icons8.com/color/48/000000/google-logo.png">
+           
+            Google
+          </a>
+  
+          <div class="text-center w-full p-t-115" style="padding: 0%;" >
+            <span class="txt1">
+              Not a member?
+            </span>
+  
+            <a class="txt1 bo1 hov1" [routerLink]="[ '/signup' ]">
+              Sign up now							
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  

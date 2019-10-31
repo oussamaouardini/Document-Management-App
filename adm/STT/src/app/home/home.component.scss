@@ -1,0 +1,159 @@
+.bod{
+    background-color: #ffffff;
+    margin-top: 0px;
+}
+
+.section_1 .headerr{
+
+   
+    background: url(../../../files/computer-keyboard-conceptual-connection-1714205.jpg)  ; 
+   //background-image: url(./whu.jpg)  ; 
+ //  background-size: cover ; 
+   background-position: center center;
+   background-repeat: no-repeat no-repeat ; 
+   background-attachment: fixed ; 
+   background-size: cover;
+    width: 100%;
+    height: 652px;
+
+}
+
+
+.section_1 .headerr .bodd{
+    color: rgb(255, 255, 255);
+    text-align: center ; 
+   padding-top: 15%;
+  // font-size: 300px;
+}
+
+
+button{
+    background: none;
+   // background-color: rgb(25, 255, 255);
+   // background-color: rgb(78, 78, 78);
+    margin-bottom: 20px ;
+    width: 240px ;
+    height: 40px;
+    border: none ; 
+    border-radius: 2px ;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-family: sans-serif ; 
+    font-weight: 500; 
+    transition: 0.2s ease ; 
+    cursor: pointer ; 
+}
+
+button :hover,
+button :active
+{
+   
+   font-size: larger;
+ color: rgb(0, 247, 227);
+ border: 2px solid rgb(0, 247, 227);
+ width: 240px ;
+    height: 40px;
+    font-weight: 500; 
+    transition: 0.2s ease ; 
+    cursor: pointer ; 
+    border: none ; 
+    border-radius: 2px ;
+
+}
+
+.section_2 .storeany .display-3{
+
+    padding-top: 10%;
+    color: black;
+   // background-color: #ffffff;
+    text-align: center ; 
+}
+
+.section_2 .storeany p {
+    text-align: center;
+}
+
+
+
+
+footer{
+
+    background: rgba(0, 0, 0, 0.815);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+
+
+}
+
+footer p>span {
+
+    color:  #ff512f;
+}
+footer input {
+    border: none !important;
+}
+footer input::placeholder {
+
+    color: #ddd;
+}
+
+footer .input-group .input-group-text{
+
+    background:beige ;
+}
+
+
+.right{
+    background-color: #181818
+}
+
+.faq{
+  width: 600px;
+  margin: auto;
+  padding:0 20px;
+  border-left: 3px solid #fff000
+}
+
+.faq p{
+  padding: 2px 5px;
+  border: 1px solid #dddddd;
+  background-color:#dddddd;
+  line-height: 1.7;
+  margin-bottom: 10px;
+  font-size: 25px;
+  position: relative;
+  width: 650px;
+}
+
+.faq p:before{
+  content: "";
+  width: 12px;
+  height: 15px;
+  border-radius: 50%;
+  background-color:  #fff000;
+  position: absolute;
+  top: 25px;
+  left: -30px;
+}
+  .display-3{
+    text-align: center;
+  }
+
+
+  .fas {
+    float: right;
+    margin-top: 1%;
+    padding-right: 0%;
+    padding-top: 00%;
+    margin-right: 0%;
+   background-color: #dddddd;
+   cursor: pointer;
+  }
+  .faq .frst-q{
+    width: 650px;
+    padding: 3px 3px;
+    background-color: #ffffff;
+  }
+  .lwest{
+    margin-bottom: 7%;
+  }

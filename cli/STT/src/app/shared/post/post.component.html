@@ -1,0 +1,94 @@
+
+
+<div class="row" >
+
+
+
+  
+
+
+
+
+  <div class="container " *ngIf="update">
+    <div class="toul"  id="login-boxx">
+      <i class="fas fa fa-times" (click)='closeup()' ></i>
+      <h1 class="hh_up">Update your file Data</h1>
+          <form (ngSubmit)="onSubmit(f,FileName,Creationdate,idfile,description,userid,valuestatu,authorName,email,AllowUsers,filestatu)" #f="ngForm">   
+              <div class="form-group">
+                     <span><h3>Description : </h3></span>
+                     <input type="text"  name="description" id="upddescription" [(ngModel)]="this.description" class="form-control" placeholder="Write a New description" (keyup)='miseajour()' >
+              </div>
+          <div *ngIf="status" class="row">
+                <h3>Who should see this? </h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 lfer9">
+                            <div class="sty">
+                                <form  #f="ngForm" >
+                 <input type="radio"  value="public" name="statu" id='pub' (change)='statuu($event.srcElement)' (keyup)='miseajour()'  ><label for='pub'>public</label> <br>                 
+                <input type="radio"  value="private" id='priv' name="statu" (change)='statuu($event.srcElement)' ><label for='priv'>private</label>             
+                </form>
+                        </div>
+              </div>
+                     </div>   
+              </div>
+            </div>  
+                  <div *ngIf="expression">
+                    <h2>select users who can have access to this file</h2>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-8 lfer9">
+                          <div class="sty">
+                                  <form  #f="ngForm" >
+                                    <div *ngFor="let naame of usersnames" class="form-group" >
+                                          <input type="checkbox"  value={{naame.data.name}}   [checked]="naame.checked"   
+                                          (click)="selectionChange($event.srcElement)"   class="checks" ><label>{{naame.data.name}}</label>
+                                    </div>
+                                  </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                      <input type="submit"  name='signup-button'   class="btn btn-warning" [disabled]='!miseaj' value='Confirm  modification'  >
+            </form>
+      </div>
+    </div></div>
+    <div class="container cont text-center">
+        <div class="row">
+    
+    <div class="col-xs-12 col-md-6 col-lg-3">
+        <section>
+        <div class="card text-center" style="width: 220px;">
+          <div class="whiteContainer">
+      <div class="clipBlue">
+	<span>More Info</span>
+        <h3>Description</h3>
+        <p>{{description}}</p>
+      </div>
+    </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"> <button class="btddn btddn-primary text-uppercase" type="button" name="button" (click)="view(FileName,idfile,authorName)"  > VIEW File</button> </li>
+            <li class="list-group-item"> <button class="btddn btddn-primary text-uppercase" type="button" name="button" (click)="gettdoc(FileName,idfile,authorName)" >Download File</button> </li>
+            <li class="list-group-item"> <button class="btddn btddn-primary text-uppercase" type="button" name="button" (click)="removefile(idfile,FileName,userid)">Delete File</button> </li>
+          </ul>
+          <div>
+            
+            
+            <i class="fa fa-pencil" (click)='updatedata(idfile)'  (mouseover)='over()' (mouseout)='out()'  > <span> update file data </span></i>
+          </div>
+          
+        </div>
+      </section>
+        </div>
+      </div>
+      </div>
+          
+
+  
+
+
+    
+  
+
+   

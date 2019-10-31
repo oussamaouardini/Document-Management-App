@@ -1,0 +1,65 @@
+.sat{
+  color: red;
+}
+ul li {
+padding-right:  5px;
+padding-top: 5px;
+font-weight: bold;
+
+}
+.bg-bg{
+
+ background-color: #ffffff ;
+ color: rgb(0, 247, 227);
+
+}
+.bg-bg ul li a  {
+
+color: #2c3e50;
+font-size: 18px;
+
+}
+
+.bg-bg ul li :hover{
+color:#006cc4;
+
+}
+.bg-bg ul li .active{
+
+color:#66c2ff;
+
+}
+
+nav{
+  width: 100%;
+  color: #000000;
+
+}
+
+.sd{
+width: 170px;
+height: 61px;
+margin-right: 5px;
+margin-top: -22px;
+background: url(../../../../images/info.png) no-repeat no-repeat ;
+background-size: cover;
+}
+
+
+
+.hder{
+margin-top:250px;
+padding-top: 250px;
+font-weight: bold;
+}
+
+
+
+
+.dropdown-menu{
+  margin-left: -129px;
+  //position: fixed;
+  padding: 5px 5px;
+  
+  }
+  

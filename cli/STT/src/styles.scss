@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('bootstrap/dist/css/bootstrap.css');
+
+
+//node_modules/bootstrap/dist/css/bootstrap.css
+
+
+/*statrt section loading*/
+/*
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 6000px;
+  overflow: hidden;
+}
+
+.up{
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.parent{
+  border-top: 3px solid #fff000;
+  width: 105px;
+  height: 105px;
+  text-align: center;
+  line-height: 105px;
+  border-radius: 50%;
+  transform: rotate(0deg) translate(0);
+  animation: animateCircle .9s infinite linear;
+}
+
+.parent h6{
+  color: #fff000;
+  letter-spacing: 4px;
+  transform: rotate(0deg) translate(0);
+  animation: animateWord .9s infinite linear;
+}
+
+@keyframes animateCircle {
+  0%{
+    transform: rotate(0deg) translate(0);
+  }
+  100%{
+    transform: rotate(360deg) translate(0);
+  }
+}
+@keyframes animateWord {
+  0%{
+    transform: rotate(0deg) translate(0);
+  }
+  100%{
+    transform: rotate(-360deg) translate(0);
+  }
+
+}
+*/
+body{
+
+  margin :0 ;
+  padding: 0 ; 
+ // background: #efefef ; 
+  font-size : 16px ; 
+//  color: #777;
+  color: #000;
+  font-family: sans-serif ; 
+  font-weight: 300; 
+ 
+  
+}
+
+
+/*end section loading*/
