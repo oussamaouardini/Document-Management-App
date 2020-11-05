@@ -5,8 +5,8 @@
 
 
 This application is developped as part of my Initiation Internship within the INFOSAT company in Agadir Morocco,
-I was asked to develop a web application for managing documents within the company (Using Firebase), and this for
-The exchange of information between an employee of a company and his boss, director or colleague ... 
+I was asked to develop a web application for managing documents within the company (Using Firebase), and this
+for the purpose of exchanging informations between an employee of a company and his boss, director or colleague ... 
 In General, file sharing between the employees.
 
 ## How it works
@@ -24,25 +24,25 @@ in order to authenticate himself. In addition he can access the files to view th
 
 • User (Employee)
 
-  ➢ Registration
-  ➢ Authentication
-  ➢ Add files
-  ➢ Edit files if (he has access)
-  ➢ Delete files (he has access)
+  - Registration
+  - Authentication
+  - Add files
+  - Edit files if (he has access)
+  - Delete files (he has access)
   
 • Admin (Director)
 
-  ➢ Authentication
-  ➢ Add files
-  ➢ Edit files
-  ➢ Delete files
-  ➢ Add Users
+  - Authentication
+  - Add files
+  - Edit files
+  - Delete files
+  - Add Users
 
 ## Development
 
 ### Setup
 
-first of all clone the repository then crete a firebase project, then copy past the cretentials of the project in 
+first of all clone the repository then crete a firebase project, then copy past the credentials of the project in 
 the app.component.ts file for both admin and users projects. after that run in the terminal ' npm install ' and 
 ' ng serve --open ' to serve the project.  
 
