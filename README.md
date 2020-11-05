@@ -27,6 +27,7 @@ in order to authenticate himself. In addition he can access the files to view th
   ➢ Add files
   ➢ Edit files if (he has access)
   ➢ Delete files (he has access)
+  
 • Admin (Director)
 
   ➢ Authentication
